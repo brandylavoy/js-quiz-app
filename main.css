@@ -6,13 +6,34 @@
     font-family: 'Lora', serif;
 }
 
-#startQuiz-button {}
+#startQuizButton {
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+    border-radius: 50px;
+    background-color: firebrick;
+    color: white;
+    font-size: 20px;
+}
 
-section.buttons {}
+.quiz {
+    text-align: center;
+}
 
-#button0,
-#button1,
-#button2,
-#button3 {
-    border: 2px solid black;
+.quiz h3 {
+    margin: 20px;
+    border: 2px grey solid;
+    border-radius: 50px;
+}
+
+.quiz .input-wrapper {
+    margin: 0 auto;
+    width: 20%;
+    padding: 10px;
+    text-align: left;
+}
+
+input.answer {
+    border: 20px solid black;
+    padding: 5px;
 }

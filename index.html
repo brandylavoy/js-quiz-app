@@ -12,24 +12,36 @@
     <header>
         <h1>Test Your Wine Knowledge</h1>
     </header>
-    <section>
+    <section class="welcome" id="welcome">
+        <h2>Wine Quiz</h2>
+        <h3>How well do you know wine?</h3>
         <!--       click this button to begin the quiz-->
-        <button id="startQuiz-button" type="button">Click Here to Begin!</button>
+        <button id="startQuizButton" type="button">Click Here to Begin!</button>
     </section>
-    <section class="buttons">
+    <section id="quiz" class="quiz">
+        <h3 id="question" class="text">What color wine is Carignane?</h3>
         <!--       buttons for the answer choices-->
-        <button id="button0" value="0"><span id="opt0"></span></button>
-        <button id="button1" value="1"><span id="opt1"></span></button>
-        <button id="button2" value="2"><span id="opt2"></span></button>
-        <button id="button3" value="3"><span id="opt3"></span></button>
-
+        <!--        input wrapper-->
+        <div id="choices" class="input-wrapper">
+            <input class="answer" type="radio" value="0" name="option"> Pink
+            <br>
+            <input class="answer" type="radio" value="1" name="option"> Red
+            <br>
+            <input class="answer" type="radio" value="2" name="option"> White
+            <br>
+            <input class="answer" type="radio" value="3" name="option"> I don't know
+            <br>
+        </div>
+        <div id="counter">Question x of y</div>
+        <div id="score">You have x of y correct</div>
     </section>
-    <section>
-        <!--       click this button to move to the next question-->
-        <button id="nextQuestion" type="button">Next Question</button>
+    <section class="results" id="results">
+        <div class="resultsText">Congratulations you got x out of y correct</div>
+        <button id="startOver" type="button">Try again</button>
     </section>
-    <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="app.js"></script>
+
 </body>
 
 </html>
