@@ -4,36 +4,105 @@
     box-sizing: border-box;
     text-align: center;
     font-family: 'Lora', serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-#startQuizButton {
-    margin: 0 auto;
-    width: 300px;
-    height: 150px;
+body {
+    background-image: url(wine-glasses-2.jpg);
+    width: 100%;
+}
+
+main {
+    background-color: rgba(159, 163, 168, .5);
+    text-align: center;
+    width: 70%;
+    margin: 25px auto;
+    border: 3px grey solid;
+    border-radius: 40px;
+}
+
+body main header {
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid grey;
+    border-radius: 50px;
+    background-color: grey;
+}
+
+body main .welcome h2 {
+    width: 80%;
+    margin: 20px auto;
+}
+
+body main .welcome h3 {
+    margin-top: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+body section h2 {
+    margin-top: 25px;
+}
+
+body section h3 {
+    margin-top: 25px;
+}
+
+body main section #startQuizButton {
+    margin: 25px auto;
+    width: 200px;
+    height: 100px;
     border-radius: 50px;
     background-color: firebrick;
     color: white;
     font-size: 20px;
 }
 
-.quiz {
+button:focus {
+    outline: 0;
+}
+
+body .quiz {
     text-align: center;
 }
 
-.quiz h3 {
-    margin: 20px;
+body .quiz h3 {
+    width: 90%;
+    margin: 20px auto;
     border: 2px grey solid;
     border-radius: 50px;
 }
 
-.quiz .input-wrapper {
+body .quiz .input-wrapper {
     margin: 0 auto;
     width: 20%;
     padding: 10px;
     text-align: left;
 }
 
-input.answer {
+body section div input.answer {
     border: 20px solid black;
     padding: 5px;
+}
+
+body section #counter {
+    text-align: center;
+    margin: 10px auto;
+}
+
+body section #score {
+    text-align: center;
+    margin: 25px auto;
+}
+
+body main section #startOver {
+    margin: 25px auto;
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: firebrick;
+    color: white;
+    font-size: 20px;
 }

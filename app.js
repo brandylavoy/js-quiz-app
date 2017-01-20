@@ -23,7 +23,7 @@ var questionsArray = [
 
 //Question 3
     {
-        questionText: 'The HUnter Valley is in which Australian state?',
+        questionText: 'The Hunter Valley is in which Australian state?',
         questionChoices: ['Queensland', 'New South Wales', 'Victoria'],
         questionCorrectChoice: 1,
         correctDetails: 'The Hunter Valley is in New South Wales, and is one of the major wine regions of Australia.'
@@ -153,7 +153,7 @@ $(document).ready(function () {
             $('#welcome').hide();
             $('#quiz').hide();
 
-            $('.resultsText').text("You have " + (totalNumberOfCorrectAnswers) + " of " + totalNumberOfQuestion + " correct.");
+            $('.resultsText').text("You got " + (totalNumberOfCorrectAnswers) + " of " + totalNumberOfQuestion + " correct.");
 
         } else {
             currentQuestionNumber++;
